@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.bgimg {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/h1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: bgchange 30s linear infinite;
+}
+
+@keyframes bgchange {
+    0%{
+        background-image: url(../img/h1.jpg);
+    }
+    25%{
+        background-image: url(../img/h2.jpg);
+    }
+    50%{
+        background-image: url(../img/h3.jpg);
+    }
+    75%{
+        background-image: url(../img/h4.jpg);
+    }
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.555);
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+    padding-right: 100px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 7px 13px;
+    border-radius: 3;
+}
+
+.logo {
+    color: rgb(255, 0, 0);
+    font-size: 25px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ul a:hover {
+    color: rgb(255, 0, 0);
+    transition: .5s;
+}
+
+.sgnbtn {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color:white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.hero h1, h2, p {
+    color: white;
+}
+
+.hero h1 {
+    font-size: 60px;
+}
+
+.hero h2 {
+    font-size: 27px;
+}
+
+.hero p {
+    width: 600px;
+}
+
+.hero {
+    padding: 300px 100px;
+}
+
+.watchbtn {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    margin-top: 20px;
+}
+
+/*______________________________________Upcoming Moive Section______________________________________ */
+
+.upmovie {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.upmovie h1 {
+    color: white;
+    padding-top: 50px;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+    padding-top: 40px;
+    
+}
+
+.box-container .moviebox {
+    text-align: center;
+    padding-top: 40px;
+}
+
+/*______________________________________Latest Moive Section______________________________________ */
+
+.lmovie {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.lmovie h1 {
+    color: white;
+    padding-top: 50px;
+}
+
+.seeallbtn {
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+.seeallbtn a {
+    color: white;
+}
+
+/*______________________________________Latest Moive Section______________________________________ */
+
+.sub {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.sub h1 {
+    color: white;
+    padding-top: 80px;
+}
+
+/*______________________________________Subscription Section______________________________________ */
+
+.sub-table {
+    margin-top: 60px;
+    padding-left: 100px;
+}
+
+.sub-table table, th, td {
+    padding: 10px;
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.61);
+    border: 1px solid rgba(255, 255, 255, 0.61);
+}
+
+.sub-table tr {
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+
+.sub-table tr:hover {
+    background-color: #222222;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sub-table table {
+    border-collapse: collapse;
+    border: 1px solid rgba(255, 255, 255, 0.61);
+    background-color: rgba(0, 0, 0, 0.548);
+    width: 900px;
+    height: 300px;
+}
+
+.sub-table th {
+    background-color: #222222;
+}
+
+.buybtn {
+    background-color: rgb(245, 0, 0);
+    color: white;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 5px 7px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/*______________________________________Signup Section______________________________________ */
+.signup {
+    padding-left: 100px;
+    padding-right: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.signup h1 {
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+}
+
+.signup-box {
+    background-color: rgba(255, 255, 255, 0.397);
+    width: 400px;
+    padding: 2rem 1rem;
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.signup form input {
+    width: 92%;
+    outline: none;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    background-color: #e4e4e4;
+}
+
+.signup form input:focus {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.signup button {
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    width: 90%;
+    background-color: rgb(245, 0, 0);
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.signup button:hover {
+    background: #a80000;
+}
+
+.rmuser {
+    color: white;
+    font-size: 15px;
+}
+
+.signup-box a {
+    color: white;
+    font-size: 13px;
+}
+
+/*______________________________________Abotus Section______________________________________ */
+.aboutus {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.aboutus h1 {
+    color: white;
+    padding-top: 80px;
+}
+
+.aboutp {
+    color: white;
+    padding-top: 20px;
+    text-align: left;   
+}
+
+/*______________________________________Footer Section______________________________________ */
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(223, 0, 0);
+    margin-top: 100px;
+    text-align: center;
+}
+
+.copyr {
+    padding-top: 30px;
+}
+
+.dgby {
+    font-size: 15px
+}
+
+
+/*______________________________________ Responsive Section______________________________________ */
+@media (max-width: 1111px){
+    .sub-table table {
+        width: 800px;
+        height: 300px;
+    }
+    .sub-table {
+        margin-top: 60px;
+        padding-left: 0px;
+    }
+    .signup-box {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 952px){
+    a.logo{
+        font-size: 20px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 12px;
+    }
+
+    .hero {
+        padding-left: 80px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+    .hero h2 {
+        font-size: 20px;
+    }
+    .hero p {
+        font-size: 12px;
+        width: 450px;
+    }
+    .watchbtn{
+        font-size: 13px;
+    }
+
+    .sub-table table {
+        width: 600px;
+        height: 100px;
+    }
+
+    .buybtn {
+        padding: 5px 7px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .signup-box {
+        margin-left: 80px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.575);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+    ul a:hover{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    .hero{
+        padding-left: 50px;
+        padding-top: 250px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+    .hero h2 {
+        font-size: 18px;
+    }
+    .hero p {
+        font-size: 12px;
+        width: 420px;
+    }
+    .watchbtn{
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 700px) {
+    .sub-table table {
+        width: 500px;
+        height: 100px;
+    }
+
+    .buybtn {
+        padding: 5px 7px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .sub {
+        padding-left: 70px;
+    }
+
+    .signup-box {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 580px) {
+    .sub-table table {
+        width: 300px;
+        height: 50px;
+    }
+
+    .buybtn {
+        padding: 5px 7px;
+        font-size: 5px;
+        font-weight: 200;
+    }
+
+    .sub{
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 498px){
+    .hero{
+        padding-left: 30px;
+        padding-top: 400px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+    .hero h2 {
+        font-size: 15px;
+    }
+    .hero p {
+        font-size: 12px;
+        width: 350px;
+    }
+    .watchbtn{
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+    .sub {
+        padding-left: 30px;
+    }
+    .sub-table table {
+        width: 100px;
+        height: 100px;
+        font-size: 12px;
+    }
+    .buybtn {
+        padding: 5px 7px;
+        font-size: 4px;
+        font-weight: 300;
+    }
+
+    .signup-box {
+        margin-left: 0px;
+        width: 300px;
+    }
+}
