@@ -1,1 +1,1 @@
-# WebDesign-for-Beginners-UoM
+# WebDesign for Beginners University of Moratuwa
